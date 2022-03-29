@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Biblio3AmjahdiRESTClient</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+    <servlet-name>AjouterLivre</servlet-name>
+    <servlet-class>Presentation.AjouterLivreServlet</servlet-class>
+    <multipart-config>
+      <location>C:\Users\hp\eclipse-workspace\Biblio3AmjahdiRESTClient\WebContent\Template\images</location>
+      
+      <max-file-size>10485760</max-file-size>
+      <max-request-size>52428800</max-request-size>
+      <file-size-threshold>1048576</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterLivre</servlet-name>
+    <url-pattern>/AjoutLivre</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
